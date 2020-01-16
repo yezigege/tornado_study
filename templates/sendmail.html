@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>邮件发送管理器</title>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+
+<style>
+    .page-header{
+        margin:0px auto;
+    }
+    .input-group{
+        margin: 10px auto;
+    }
+    .panel{
+        margin: 0px auto 50px;
+    }
+    button{
+        background-color: #5cb85c;
+        color: aliceblue;
+        width: 200px;
+        height: 50px;
+        font-size:20px;
+        font-weight:bold;
+        border-radius:15px;
+        border-image: linear-gradient(to right, orangered, transparent);
+        font-family:'Microsoft Yahei';
+    }
+</style>
+
+<body>
+    <div class="page-header" style="text-align:center;">
+      <h1>邮件发送管理器</h1>
+    </div>
+
+    <div class="panel panel-primary">
+        <div class="panel-heading"><h4>发送者</h4></div>
+        <div class="panel-body">
+            <div role="separator" class="divider"></div>
+            <div class="input-group">
+              <span class="input-group-addon" id="send_user_1">发送者昵称</span>
+              <input type="text" class="form-control" placeholder="用户昵称" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon" id="send_user_2">授权码</span>
+              <input type="password" class="form-control" placeholder="请输入授权码" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="你的邮箱地址" aria-describedby="basic-addon2">
+              <span class="input-group-addon" id="send_user_3">@qq.com</span>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="panel panel-success">
+        <div class="panel-heading"><h4>接收者</h4></div>
+        <div class="panel-body">
+            <div class="input-group">
+              <span class="input-group-addon" id="accept_user1">接收者昵称</span>
+              <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="你的邮箱地址" aria-describedby="basic-addon2">
+              <span class="input-group-addon" id="accept_user3">@qq.com</span>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="panel panel-warning">
+        <div class="panel-heading"><h4>邮件内容</h4></div>
+        <div class="panel-body">
+            <div class="input-group">
+              <span class="input-group-addon" id="send_user_4">邮件内容</span>
+              <input type="text" class="form-control" placeholder="邮件内容" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon" id="send_user_5">邮件主题</span>
+              <input type="text" class="form-control" placeholder="邮件主题" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon" id="send_user_6">附件</span>
+              <input type="text" class="form-control" placeholder="附件地址" aria-describedby="basic-addon1">
+            </div>
+        </div>
+    </div>
+
+    <div class="panel panel-danger">
+        <div class="panel-heading"><h4>定时选择</h4></div>
+        <div class="panel-body">
+            <div class="input-group">
+              <span class="input-group-addon" id="choice_time1">发送时间</span>
+              <input type="text" class="form-control" placeholder="发送时间" aria-describedby="basic-addon1">
+            </div>
+        </div>
+    </div>
+
+    <div class="email_button" style="text-align:center">
+        <button style="margin-right: 70px"><span>确认</span></button>
+        <button><span>取消</span></button>
+    </div>
+
+</body>
+
+</html>
